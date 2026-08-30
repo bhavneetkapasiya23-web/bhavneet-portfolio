@@ -61,16 +61,30 @@
   * {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
-    color-adjust: exact !important;
   }
 
-  body * {
-    visibility: hidden;
+  body > *:not(#resume-modal-root) {
+    display: none !important;
   }
 
-  #resume-printable-area,
-  #resume-printable-area * {
-    visibility: visible;
+  #resume-modal-root {
+    display: block !important;
+    position: static !important;
+    inset: auto !important;
+    background: none !important;
+    backdrop-filter: none !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  #resume-modal-root > div {
+    max-height: none !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+    border: none !important;
+    width: 100% !important;
   }
 
   #resume-printable-area {
@@ -81,9 +95,9 @@
     padding: 0 !important;
     margin: 0 !important;
     background: #ffffff !important;
-    color: #000000 !important;
   }
 
+  #resume-printable-area,
   #resume-printable-area * {
     color: #000000 !important;
     background: transparent !important;
