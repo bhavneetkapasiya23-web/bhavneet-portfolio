@@ -58,18 +58,21 @@
   animation: pulse-glow 6s ease-in-out infinite;
 }
 @media print {
-  /* Hide everything by default */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
   body * {
     visibility: hidden;
   }
 
-  /* Show only the resume content */
   #resume-printable-area,
   #resume-printable-area * {
     visibility: visible;
   }
 
-  /* Break out of the fixed/overlay positioning for print */
   #resume-printable-area {
     position: static !important;
     overflow: visible !important;
@@ -77,11 +80,14 @@
     width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
+    background: #ffffff !important;
+    color: #000000 !important;
   }
 
-  /* Also neutralize the fixed modal wrapper so it doesn't repeat */
-  .fixed {
-    position: static !important;
+  #resume-printable-area * {
+    color: #000000 !important;
+    background: transparent !important;
+    border-color: #cccccc !important;
   }
 
   @page {
@@ -89,4 +95,3 @@
     margin: 1.5cm;
   }
 }
-
