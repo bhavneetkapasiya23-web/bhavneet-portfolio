@@ -71,7 +71,7 @@
     display: block !important;
     position: static !important;
     inset: auto !important;
-    background: none !important;
+    background: #ffffff !important;
     backdrop-filter: none !important;
     padding: 0 !important;
     width: 100% !important;
@@ -79,12 +79,19 @@
     overflow: visible !important;
   }
 
+  /* The dark card wrapper */
   #resume-modal-root > div {
     max-height: none !important;
     overflow: visible !important;
     box-shadow: none !important;
     border: none !important;
     width: 100% !important;
+    background: #ffffff !important;
+  }
+
+  /* Hide the top control bar (Print/Copy/Close buttons) */
+  #resume-modal-root .shrink-0 {
+    display: none !important;
   }
 
   #resume-printable-area {
