@@ -46,7 +46,7 @@ export const projects: Project[] = [
     ],
     techStack: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'Prisma ORM', 'OpenRouter API', 'Stripe API', 'JWT', 'Vercel'],
     image: aiBuilderImg,
-    githubUrl: 'https://github.com/bhavneetkapasiya23-web',
+    githubUrl: 'https://github.com/bhavneetkapasiya23-web/ai-site-builder',
     liveDemoUrl: 'https://ai-site-builder-2tq6.vercel.app/',
     status: 'Completed',
     featured: true,
