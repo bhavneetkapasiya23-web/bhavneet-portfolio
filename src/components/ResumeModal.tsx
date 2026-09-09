@@ -156,7 +156,7 @@ Problem Solving | Analytical Thinking | Communication | Teamwork | Adaptability 
               <span>•</span>
               <a href="mailto:bhavneetkapasiya23@gmail.com" className="hover:text-indigo-300">bhavneetkapasiya23@gmail.com</a>
               <span>•</span>
-              <a href="https://github.com/bhavneetkapasiya23" target="_blank" rel="noreferrer" className="hover:text-indigo-300">github.com/bhavneetkapasiya23</a>
+              <a href="https://github.com/bhavneetkapasiya23-web" target="_blank" rel="noreferrer" className="hover:text-indigo-300">github.com/bhavneetkapasiya23</a>
             </div>
           </div>
 
