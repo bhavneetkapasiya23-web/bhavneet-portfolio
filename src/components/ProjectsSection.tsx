@@ -109,17 +109,28 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                         )}
                       </div>
 
-                      {/* Interactive demo quick hover trigger */}
-                      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
-                        {project.id === 'real-time-stock-dashboard' && (
-                          <button
-                            onClick={onOpenStockDemo}
-                            className="px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold flex items-center gap-2 shadow-lg cursor-pointer transform translate-y-2 group-hover:translate-y-0 transition-transform"
-                          >
-                            <Play className="w-4 h-4 fill-white" />
-                            <span>Launch Live Simulator</span>
-                          </button>
-                        )}
+    {/* Interactive demo quick hover trigger */}
+        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+               {project.id === 'real-time-stock-dashboard' && (
+               <>
+    
+                href={project.liveDemoUrl || 'https://live-stock-dashboard-tau.vercel.app/'}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold flex items-center gap-2 shadow-lg cursor-pointer transform translate-y-2 group-hover:translate-y-0 transition-transform"
+    >
+      <ExternalLink className="w-4 h-4" />
+      <span>Live Demo (Actual Website)</span>
+       </a>
+        <button
+          onClick={onOpenStockDemo}
+     className="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-600 text-xs font-bold flex items-center gap-2 shadow-lg cursor-pointer transform translate-y-2 group-hover:translate-y-0 transition-transform"
+                    >
+                    <Play className="w-4 h-4 fill-white" />
+                     <span>Launch Live Simulator</span>
+              </button>
+          </>
+        )}
                         {project.id === 'ai-website-builder' && (
                           <a
                             href={project.liveDemoUrl || 'https://ai-site-builder-2tq6.vercel.app/'}
@@ -192,14 +203,26 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                     {/* Action Buttons */}
                     <div className="flex flex-wrap items-center gap-3 pt-3">
                       {project.id === 'real-time-stock-dashboard' && (
-                        <button
-                          onClick={onOpenStockDemo}
-                          className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold transition-colors shadow-md shadow-indigo-600/25 cursor-pointer"
-                        >
-                          <Play className="w-3.5 h-3.5 fill-white" />
-                          <span>Live Dashboard Demo</span>
-                        </button>
-                      )}
+  <>
+    
+      href={project.liveDemoUrl || 'https://live-stock-dashboard-tau.vercel.app/'}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold transition-all shadow-md shadow-indigo-600/30 cursor-pointer"
+    >
+      <ExternalLink className="w-3.5 h-3.5" />
+      <span>Live Demo (Actual Website)</span>
+    </a>
+
+    <button
+      onClick={onOpenStockDemo}
+      className="flex items-center gap-1.5 px-3 py-2.5 rounded-xl bg-indigo-950/50 hover:bg-indigo-900/50 text-indigo-300 border border-indigo-800/60 text-xs font-medium transition-colors cursor-pointer"
+    >
+      <Play className="w-3.5 h-3.5 fill-current" />
+      <span>In-App Simulator</span>
+    </button>
+  </>
+)}
 
                       {project.id === 'ai-website-builder' && (
                         <>
