@@ -122,14 +122,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
       <ExternalLink className="w-4 h-4" />
       <span>Live Demo (Actual Website)</span>
        </a>
-        <button
-          onClick={onOpenStockDemo}
-     className="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-600 text-xs font-bold flex items-center gap-2 shadow-lg cursor-pointer transform translate-y-2 group-hover:translate-y-0 transition-transform"
-                    >
-                    <Play className="w-4 h-4 fill-white" />
-                     <span>Launch Live Simulator</span>
-              </button>
-          </>
+       
         )}
                         {project.id === 'ai-website-builder' && (
                           <a
