@@ -112,7 +112,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
     {/* Interactive demo quick hover trigger */}
         <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
                {project.id === 'real-time-stock-dashboard' && (
-               <>
+               
     <a
                 href={project.liveDemoUrl || 'https://live-stock-dashboard-tau.vercel.app/'}
                 target="_blank"
