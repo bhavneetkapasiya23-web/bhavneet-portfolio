@@ -67,7 +67,7 @@ export const projects: Project[] = [
     ],
     techStack: ['React.js', 'TypeScript', 'Recharts', 'WebSockets', 'Tailwind CSS', 'Node.js', 'REST APIs'],
     image: stockDashImg,
-    githubUrl: 'https://github.com/bhavneetkapasiya23',
+    githubUrl: 'https://github.com/bhavneetkapasiya23-web/live-stock-dashboard',
     liveDemoUrl: '#demo-stock',
     status: 'Completed',
     featured: true,
