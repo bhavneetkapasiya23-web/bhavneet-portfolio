@@ -76,7 +76,7 @@ export const projects: Project[] = [
     id: 'ai-observability-platform',
     title: 'AI-Powered Observability Platform',
     subtitle: 'Intelligent Microservice Telemetry & Anomaly Analysis',
-    year: '2025',
+    year: '2026',
     category: 'AI & ML',
     description: 'An AI-assisted cloud observability dashboard (GleanInsights) for system metrics, microservice distributed logs, and automated root-cause anomaly detection.',
     longDescription: 'Engineered a next-generation cloud monitoring platform (GleanInsights) that ingests distributed metrics and logs across microservices, leveraging AI models to automatically pinpoint root causes of performance regressions and anomalies.',

@@ -66,7 +66,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
   const handleCopyText = () => {
     const resumeText = `BHAVNEET
 Software Engineer | Full-Stack Developer | AI-Integrated Web Applications
-Meerut, Uttar Pradesh | +91 7417634695 | bhavneetkapasiya23@gmail.com | github.com/bhavneetkapasiya23
+Meerut, Uttar Pradesh | +91 7417634695 | bhavneetkapasiya23@gmail.com | github.com/bhavneetkapasiya23-web
 
 PROFESSIONAL SUMMARY
 Computer Science undergraduate specializing in Artificial Intelligence with hands-on experience designing, developing, and deploying full-stack web applications. Skilled in JavaScript, Python, Java, SQL, React.js, Node.js, Express.js, PostgreSQL, REST APIs, JWT authentication, Stripe integration, WebSockets, and LLM API integration. Seeking a Software Engineer, Full-Stack Developer, or AI-focused internship/entry-level role.
@@ -95,7 +95,7 @@ PROJECTS
    - Built reusable, strongly typed TypeScript components with Recharts to visualize price trends and historical market movement.
    - Structured client-side state management for continuous incoming data streams to maintain smooth UI performance.
 
-3. AI-Powered Observability Platform (2025) | Live: https://gleaninsights.vercel.app
+3. AI-Powered Observability Platform (2026) | Live: https://gleaninsights.vercel.app
    React.js, Tailwind CSS, TypeScript, AI Anomaly Detection, REST APIs
    - Engineered an AI-assisted cloud observability platform (GleanInsights) for system metrics, microservice distributed logs, and automated root-cause anomaly detection.
    - Built a responsive component-driven React interface and integrated AI-based anomaly detection and root-cause analysis.
@@ -189,7 +189,7 @@ Problem Solving | Analytical Thinking | Communication | Teamwork | Adaptability 
               <span>•</span>
               <a href="mailto:bhavneetkapasiya23@gmail.com" className="hover:text-indigo-300">bhavneetkapasiya23@gmail.com</a>
               <span>•</span>
-              <a href="https://github.com/bhavneetkapasiya23-web" target="_blank" rel="noreferrer" className="hover:text-indigo-300">github.com/bhavneetkapasiya23</a>
+              <a href="https://github.com/bhavneetkapasiya23-web" target="_blank" rel="noreferrer" className="hover:text-indigo-300">github.com/bhavneetkapasiya23-web</a>
             </div>
           </div>
 
@@ -295,11 +295,11 @@ Problem Solving | Analytical Thinking | Communication | Teamwork | Adaptability 
                     className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-sky-600/30 hover:bg-sky-600/50 text-sky-200 hover:text-white border border-sky-500/50 text-[11px] font-mono font-medium transition-all shadow-sm cursor-pointer"
                     title="Tap to open deployed live website in a new tab"
                   >
-                    <span>Live Demo: GleanInsights</span>
+                    <span>Live Demo: Glean Insights</span>
                     <ExternalLink className="w-3 h-3 text-sky-300" />
                   </a>
                 </div>
-                <span className="text-xs font-mono text-slate-400">2025</span>
+                <span className="text-xs font-mono text-slate-400">2026</span>
               </div>
               <div className="text-xs text-indigo-300 italic">
                 React.js, Tailwind CSS, TypeScript, AI Anomaly Detection, REST APIs

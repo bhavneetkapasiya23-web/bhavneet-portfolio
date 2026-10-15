@@ -80,7 +80,7 @@ export const AIChatModal: React.FC<AIChatModalProps> = ({
     }
 
     if (q.includes('observability') || q.includes('glean') || q.includes('telemetry') || q.includes('metric')) {
-      return `The AI-Powered Observability Platform (GleanInsights, 2025) is live at https://gleaninsights.vercel.app!\n• Intelligent telemetry dashboard for distributed microservices\n• Built with React.js, TypeScript, Tailwind CSS, and REST APIs\n• Automated AI anomaly detection and incident root-cause analysis\n• Latency heatmaps, real-time error rate monitors, and customizable alert thresholds.`;
+      return `The AI-Powered Observability Platform (GleanInsights, 2026) is live at https://gleaninsights.vercel.app!\n• Intelligent telemetry dashboard for distributed microservices\n• Built with React.js, TypeScript, Tailwind CSS, and REST APIs\n• Automated AI anomaly detection and incident root-cause analysis\n• Latency heatmaps, real-time error rate monitors, and customizable alert thresholds.`;
     }
 
     if (q.includes('education') || q.includes('college') || q.includes('degree') || q.includes('miet') || q.includes('school')) {
