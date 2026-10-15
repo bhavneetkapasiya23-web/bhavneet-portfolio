@@ -76,11 +76,11 @@ export const AIChatModal: React.FC<AIChatModalProps> = ({
     }
 
     if (q.includes('stock') || q.includes('websocket') || q.includes('dashboard')) {
-      return `The Real-Time Stock Dashboard (2025) is built with React.js, TypeScript, Recharts, and WebSockets.\n• Streams sub-second live price ticks over WebSocket channels\n• High-throughput client-side buffer state management to prevent UI stutter\n• Interactive Recharts for candlestick and volume visualization.`;
+      return `The Real-Time Stock Dashboard (2025) is live at https://live-stock-dashboard-tau.vercel.app/!\n• Built with React.js, TypeScript, Recharts, and WebSockets\n• Streams sub-second live price ticks over WebSocket channels\n• High-throughput client-side buffer state management to prevent UI stutter\n• Interactive Recharts for candlestick and volume visualization.`;
     }
 
-    if (q.includes('observability') || q.includes('progress') || q.includes('in progress')) {
-      return `The AI-Powered Observability Platform (In Progress) is an intelligent telemetry dashboard built with React.js and Tailwind CSS for distributed microservices. It features automated AI anomaly detection and incident root-cause analysis.`;
+    if (q.includes('observability') || q.includes('glean') || q.includes('telemetry') || q.includes('metric')) {
+      return `The AI-Powered Observability Platform (GleanInsights, 2025) is live at https://gleaninsights.vercel.app!\n• Intelligent telemetry dashboard for distributed microservices\n• Built with React.js, TypeScript, Tailwind CSS, and REST APIs\n• Automated AI anomaly detection and incident root-cause analysis\n• Latency heatmaps, real-time error rate monitors, and customizable alert thresholds.`;
     }
 
     if (q.includes('education') || q.includes('college') || q.includes('degree') || q.includes('miet') || q.includes('school')) {

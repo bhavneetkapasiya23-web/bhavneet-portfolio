@@ -61,16 +61,16 @@ PROJECTS
    - Designed database models for users, projects, credits, and payment records using PostgreSQL and Prisma ORM on Neon.
    - Deployed the application on Vercel, completing the full development-to-production deployment lifecycle.
 
-2. Real-Time Stock Dashboard (2025)
+2. Real-Time Stock Dashboard (2025) | Live: https://live-stock-dashboard-tau.vercel.app/
    React.js, TypeScript, Recharts, WebSockets
    - Developed a responsive stock market dashboard that streams and renders live price data using WebSockets.
    - Built reusable, strongly typed TypeScript components with Recharts to visualize price trends and historical market movement.
    - Structured client-side state management for continuous incoming data streams to maintain smooth UI performance.
 
-3. AI-Powered Observability Platform (In Progress)
-   React.js, Tailwind CSS
-   - Designing an AI-assisted observability dashboard for logs, metrics, and system health across microservice architectures.
-   - Building a responsive component-driven React interface and planning AI-based anomaly detection and root-cause analysis.
+3. AI-Powered Observability Platform (2025) | Live: https://gleaninsights.vercel.app
+   React.js, Tailwind CSS, TypeScript, AI Anomaly Detection, REST APIs
+   - Engineered an AI-assisted cloud observability platform (GleanInsights) for system metrics, microservice distributed logs, and automated root-cause anomaly detection.
+   - Built a responsive component-driven React interface and integrated AI-based anomaly detection and root-cause analysis.
 
 EDUCATION
 - Bachelor of Technology, Computer Science and Engineering (Artificial Intelligence) (2023 – Pursuing)
@@ -224,8 +224,20 @@ Problem Solving | Analytical Thinking | Communication | Teamwork | Adaptability 
 
             {/* Project 2 */}
             <div className="space-y-1.5">
-              <div className="flex justify-between items-baseline">
-                <span className="text-sm font-bold text-white">Real-Time Stock Dashboard</span>
+              <div className="flex flex-wrap justify-between items-baseline gap-2">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-sm font-bold text-white">Real-Time Stock Dashboard</span>
+                  <a
+                    href="https://live-stock-dashboard-tau.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-indigo-600/30 hover:bg-indigo-600/50 text-indigo-200 hover:text-white border border-indigo-500/50 text-[11px] font-mono font-medium transition-all shadow-sm cursor-pointer"
+                    title="Tap to open deployed live website in a new tab"
+                  >
+                    <span>Live Demo: Stock Dashboard</span>
+                    <ExternalLink className="w-3 h-3 text-indigo-300" />
+                  </a>
+                </div>
                 <span className="text-xs font-mono text-slate-400">2025</span>
               </div>
               <div className="text-xs text-indigo-300 italic">
@@ -240,16 +252,29 @@ Problem Solving | Analytical Thinking | Communication | Teamwork | Adaptability 
 
             {/* Project 3 */}
             <div className="space-y-1.5">
-              <div className="flex justify-between items-baseline">
-                <span className="text-sm font-bold text-white">AI-Powered Observability Platform</span>
-                <span className="text-xs font-mono text-slate-400">In Progress</span>
+              <div className="flex flex-wrap justify-between items-baseline gap-2">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-sm font-bold text-white">AI-Powered Observability Platform</span>
+                  <a
+                    href="https://gleaninsights.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-sky-600/30 hover:bg-sky-600/50 text-sky-200 hover:text-white border border-sky-500/50 text-[11px] font-mono font-medium transition-all shadow-sm cursor-pointer"
+                    title="Tap to open deployed live website in a new tab"
+                  >
+                    <span>Live Demo: GleanInsights</span>
+                    <ExternalLink className="w-3 h-3 text-sky-300" />
+                  </a>
+                </div>
+                <span className="text-xs font-mono text-slate-400">2025</span>
               </div>
               <div className="text-xs text-indigo-300 italic">
-                React.js, Tailwind CSS
+                React.js, Tailwind CSS, TypeScript, AI Anomaly Detection, REST APIs
               </div>
               <ul className="list-disc list-inside text-xs text-slate-300 space-y-1 pl-1">
-                <li>Designing an AI-assisted observability dashboard for logs, metrics, and system health across microservice architectures.</li>
-                <li>Building a responsive component-driven React interface and planning AI-based anomaly detection and root-cause analysis.</li>
+                <li>Engineered an AI-assisted cloud observability dashboard (GleanInsights) for system metrics, microservice distributed logs, and automated root-cause anomaly detection.</li>
+                <li>Building a responsive component-driven React interface with modular telemetry widgets, latency heatmaps, and error rate monitoring.</li>
+                <li>Integrated AI-based anomaly detection and automated root-cause analysis for accelerated incident triage.</li>
               </ul>
             </div>
           </div>

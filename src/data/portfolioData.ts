@@ -76,21 +76,21 @@ export const projects: Project[] = [
     id: 'ai-observability-platform',
     title: 'AI-Powered Observability Platform',
     subtitle: 'Intelligent Microservice Telemetry & Anomaly Analysis',
-    year: 'In Progress',
+    year: '2025',
     category: 'AI & ML',
-    description: 'An AI-assisted cloud observability dashboard for system metrics, microservice distributed logs, and automated root-cause anomaly detection.',
-    longDescription: 'Designing next-generation monitoring infrastructure that ingests distributed traces and logs across microservices, leveraging AI models to automatically pinpoint root causes of performance regressions and anomalies.',
+    description: 'An AI-assisted cloud observability dashboard (GleanInsights) for system metrics, microservice distributed logs, and automated root-cause anomaly detection.',
+    longDescription: 'Engineered a next-generation cloud monitoring platform (GleanInsights) that ingests distributed metrics and logs across microservices, leveraging AI models to automatically pinpoint root causes of performance regressions and anomalies.',
     highlights: [
-      'Designing an AI-assisted observability dashboard for logs, metrics, and system health across microservice architectures.',
-      'Building a responsive component-driven React interface with modular telemetry widgets.',
-      'Planning AI-based anomaly detection and automated root-cause analysis for faster incident response.',
-      'Architecting real-time system health metrics with latency heatmaps and error rate monitoring.'
+      'Developed an AI-assisted cloud observability dashboard for system metrics, distributed logs, and microservice health.',
+      'Built a responsive component-driven React & TypeScript interface with modular telemetry widgets and latency heatmaps.',
+      'Integrated AI-powered anomaly detection and automated root-cause analysis for accelerated incident triage.',
+      'Architected real-time system health metrics with customizable alert thresholds and error rate tracking.'
     ],
     techStack: ['React.js', 'Tailwind CSS', 'TypeScript', 'AI Anomaly Detection', 'REST APIs', 'System Architecture'],
     image: observabilityImg,
     githubUrl: 'https://github.com/bhavneetkapasiya23',
-    liveDemoUrl: '#demo-observability',
-    status: 'In Progress',
+    liveDemoUrl: 'https://gleaninsights.vercel.app',
+    status: 'Completed',
     featured: true,
   },
 ];
@@ -252,7 +252,7 @@ export const quickFAQ = [
   },
   {
     question: "What projects has Bhavneet built?",
-    answer: "His highlighted projects include the AI Website Builder (full-stack prompt-to-site generator with Stripe payments & PostgreSQL), the Real-Time Stock Dashboard (WebSocket-driven live market visualizer with Recharts), and an in-progress AI-Powered Observability Platform."
+    answer: "His highlighted projects include the AI Website Builder (full-stack prompt-to-site generator with Stripe payments & PostgreSQL), the Real-Time Stock Dashboard (WebSocket-driven live market visualizer with Recharts), and the AI-Powered Observability Platform (GleanInsights cloud telemetry & anomaly detection)."
   },
   {
     question: "What is his educational background?",

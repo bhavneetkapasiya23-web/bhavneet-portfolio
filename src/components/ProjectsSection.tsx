@@ -135,6 +135,17 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                             <span>Visit Live Website</span>
                           </a>
                         )}
+                        {project.id === 'ai-observability-platform' && (
+                          <a
+                            href={project.liveDemoUrl || 'https://gleaninsights.vercel.app'}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-4 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold flex items-center gap-2 shadow-lg cursor-pointer transform translate-y-2 group-hover:translate-y-0 transition-transform"
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                            <span>Visit Live Website</span>
+                          </a>
+                        )}
                         <button
                           onClick={() => setSelectedProjectModal(project)}
                           className="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-600 flex items-center gap-1.5 cursor-pointer transform translate-y-2 group-hover:translate-y-0 transition-transform"
@@ -237,6 +248,18 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                             <span>In-App Simulator</span>
                           </button>
                         </>
+                      )}
+
+                      {project.id === 'ai-observability-platform' && (
+                        <a
+                          href={project.liveDemoUrl || 'https://gleaninsights.vercel.app'}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold transition-all shadow-md shadow-sky-600/30 cursor-pointer"
+                        >
+                          <ExternalLink className="w-3.5 h-3.5" />
+                          <span>Live Demo (Actual Website)</span>
+                        </a>
                       )}
 
                       <a
