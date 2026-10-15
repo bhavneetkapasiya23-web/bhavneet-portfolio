@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { personalInfo } from '../data/portfolioData';
 import { 
   X, 
-  Printer, 
   Download, 
   Copy, 
   Check, 
@@ -23,16 +22,45 @@ interface ResumeModalProps {
 
 export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
   const [copied, setCopied] = useState(false);
+  const [downloading, setDownloading] = useState(false);
 
   if (!isOpen) return null;
 
-  const handlePrint = () => {
+  const handleDownloadResume = (e?: React.MouseEvent) => {
+    setDownloading(true);
     confetti({
       particleCount: 50,
       spread: 70,
       origin: { y: 0.6 }
     });
-    window.print();
+
+    // Fetch the PDF as a Blob to create an in-memory object URL.
+    // This allows Chrome and other browsers to download the file directly
+    // without triggering iframe sandbox or popup blocker restrictions.
+    fetch('/Bhavneet_Resume.pdf')
+      .then((res) => {
+        if (!res.ok) throw new Error('Network error');
+        return res.blob();
+      })
+      .then((blob) => {
+        const blobUrl = window.URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = blobUrl;
+        link.download = 'Bhavneet_Resume.pdf';
+        link.setAttribute('download', 'Bhavneet_Resume.pdf');
+        document.body.appendChild(link);
+        link.click();
+        setTimeout(() => {
+          document.body.removeChild(link);
+          window.URL.revokeObjectURL(blobUrl);
+          setDownloading(false);
+        }, 1500);
+      })
+      .catch(() => {
+        // Fallback: direct navigation / window.open in a new tab
+        window.open('/Bhavneet_Resume.pdf', '_blank');
+        setDownloading(false);
+      });
   };
 
   const handleCopyText = () => {
@@ -113,20 +141,25 @@ Problem Solving | Analytical Thinking | Communication | Teamwork | Adaptability 
           <div className="flex items-center gap-2">
             <button
               onClick={handleCopyText}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 transition-colors cursor-pointer"
+              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 transition-colors cursor-pointer"
               title="Copy as Plain Text"
             >
               {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5 text-slate-400" />}
               <span>{copied ? 'Copied!' : 'Copy Text'}</span>
             </button>
 
-            <button
-              onClick={handlePrint}
-              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold shadow-md shadow-indigo-600/30 transition-colors cursor-pointer"
+            <a
+              href="/Bhavneet_Resume.pdf"
+              download="Bhavneet_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleDownloadResume}
+              className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow-md shadow-indigo-600/30 transition-all cursor-pointer"
+              title="Download official Bhavneet_Resume.pdf"
             >
-              <Printer className="w-3.5 h-3.5" />
-              <span>Print / PDF</span>
-            </button>
+              <Download className="w-3.5 h-3.5" />
+              <span>{downloading ? 'Downloading...' : 'Download Resume'}</span>
+            </a>
 
             <button
               onClick={onClose}

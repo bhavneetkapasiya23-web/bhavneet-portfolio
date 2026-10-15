@@ -18,7 +18,7 @@ export const personalInfo = {
   avatar: avatarImg,
   fullPortrait: portraitFullImg,
   availability: 'Open to Software Engineer, Full-Stack & AI-focused roles',
-  resumeUrl: '#resume',
+  resumeUrl: '/Bhavneet_Resume.pdf',
 };
 
 export const stats = [
